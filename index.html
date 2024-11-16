@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de Pablo y Mar</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, p, ul, li, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Lora', serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        header .hero {
+            width: 100%;
+            height: 100vh;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            position: relative;
+        }
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header .overlay h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        header .overlay p {
+            font-size: 1.5rem;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #b08968;
+        }
+        .text-content {
+            font-size: 1.125rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .image-row img {
+            flex: 1;
+            height: 300px;
+            object-fit: cover;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .schedule, .hotels, .gallery {
+            background-color: #f8f4ee;
+            padding: 60px 20px;
+        }
+        .gallery img {
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header>
+        <div class="hero">
+            <div class="overlay">
+                <h1>Boda de Pablo y Mar</h1>
+                <p>¡Nos casamos el 7 de junio de 2025!</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <h2>Nuestra historia</h2>
+        <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada, lectus quis consectetur fermentum, nunc lacus aliquam sapien, a tempor erat sapien non enim.</p>
+        <div class="image-row">
+            <img src="https://via.placeholder.com/600x400" alt="Foto 1">
+            <img src="https://via.placeholder.com/600x400" alt="Foto 2">
+            <img src="https://via.placeholder.com/600x400" alt="Foto 3">
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule">
+        <h2>Horarios</h2>
+        <ul>
+            <li><strong>13:15:</strong> Ceremonia religiosa en Iglesia San Juan del Hospital</li>
+            <li><strong>15:00:</strong> Banquete en Masia de El Carmen</li>
+            <li><strong>18:30:</strong> ¡Comienza la fiesta!</li>
+        </ul>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="hotels">
+        <h2>Hoteles recomendados</h2>
+        <ul>
+            <li>Hotel Valencia Center</li>
+            <li>Hotel NH Valencia Las Ciencias</li>
+            <li>Hotel Silken Puerta de Valencia</li>
+        </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Galería</h2>
+        <div class="image-row">
+            <img src="https://via.placeholder.com/600x400" alt="Galería 1">
+            <img src="https://via.placeholder.com/600x400" alt="Galería 2">
+        </div>
+    </section>
+
+    <!-- Gift Section -->
+    <section>
+        <h2>Regalo de bodas</h2>
+        <p class="text-content">El mejor regalo es tenerte con nosotros en este día tan especial. Pero si deseas ayudarnos, puedes hacerlo con una contribución en el número de cuenta:</p>
+        <p class="text-content"><strong>ES12 3456 7890 1234 5678 9012</strong></p>
+        <p class="text-content">¡Prometemos usarlo en una luna de miel inolvidable y mandarte fotos de agradecimiento!</p>
+    </section>
+
+    <!-- RSVP Section -->
+    <section>
+        <h2>Confirma tu asistencia</h2>
+        <p class="text-content">Déjanos tu información para que podamos esperarte:</p>
+        <form action="mailto:marypablo@gmail.com" method="post" style="text-align: center;">
+            <input type="text" name="nombre" placeholder="Tu nombre" required style="padding: 10px; width: 80%; margin-bottom: 10px;">
+            <input type="email" name="email" placeholder="Tu correo electrónico" required style="padding: 10px; width: 80%; margin-bottom: 10px;">
+            <button type="submit" style="padding: 10px 20px; background-color: #b08968; color: white; border: none; cursor: pointer;">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contacto: marypablo@gmail.com | Teléfono: 636 303 537</p>
+    </footer>
+</body>
+</html>
